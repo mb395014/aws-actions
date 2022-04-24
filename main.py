@@ -5,7 +5,7 @@ from dateutil.tz import tzutc
 
 
 import json
-from RotateAccessKey import RotateAccessKey
+from modules.RotateAccessKey import RotateAccessKey
 
 if __name__ == "__main__":
 
@@ -23,5 +23,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     new_secret_access_key = RotateAccessKey(
         access_key_id=args.access_key_id, secret_access_key=args.access_secret_id
-    ).rotate_access_keys()
+    ).rotate_RotateAccessKey.pyaccess_keys()
     print(new_secret_access_key)
