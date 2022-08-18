@@ -23,11 +23,3 @@ class RotateAccessKey:
         if new_access_key := self._create_access_key():
             self._delete_access_key()
         return new_access_key
-
-
-# print(
-#     RotateAccessKey(
-#         access_key_id="AKIAQ2EIA7JTD7TTQM5Q",
-#         secret_access_key="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",
-#     ).rotate_access_keys()
-# )
